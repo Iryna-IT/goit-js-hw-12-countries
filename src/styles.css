@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+} */
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7ba7ab;
+  border-radius: 5px;
+  outline: none;
+  background: #f9f0da;
+  color: black;
+}
+
+input::placeholder {
+  color: #9e9c9c;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.countries-list {
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.country_name {
+  font-size: 72;
+  font-weight: 900;
+  text-align: center;
+}
+
+.title {
+  font-size: 48;
+  font-weight: 900;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  margin-left: 40px;
+  padding-left: 0px;
+  font-weight: 400;
+}
+.data {
+  font-weight: 400;
+}
+
+.country-flag {
+  max-width: 100%;
+  margin-left: 40px;
+}
+
+.counrties-item {
+  cursor: pointer;
+}
