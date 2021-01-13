@@ -33,12 +33,11 @@ function renderCountryDescriprion(event) {
     const markup = countryInfoTemplate(data);
     const countriesList = countriesListTemplate(data);
     if (!data) {
-      return;
     } else if (data.length > 10) {
-      const errorNotification = error({
+        error({
   text: "Too many matches found. Please, enter a correct country name!"
       });
-      return errorNotification;
+      return error;
     } else if (data.length === 1) {
       countryRef.insertAdjacentHTML('beforeend', markup);
       inputRef.value = "";
